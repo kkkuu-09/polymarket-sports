@@ -10,13 +10,14 @@ st.cache_resource.clear()
 
 # ========== 数据库配置 ==========
 DB_CONFIG = {
-    "host": "125.227.80.149",  # 你的公网IP
+    "host": "23.tcp.cpolar.top",  # 你的实际域名
     "user": "root",
-    "password": "123456",
-    "database": "mlb",
-    "port": 3306
+    "password": "123456",      # 你的 MySQL 密码
+    "database": "mlb",         # NBA 用 nba，MLB 用 mlb
+    "port": 14280             # 你的实际端口
 }
 engine = create_engine(f"mysql+pymysql://{DB_CONFIG['user']}:{DB_CONFIG['password']}@{DB_CONFIG['host']}:{DB_CONFIG['port']}/{DB_CONFIG['database']}")
+
 st.set_page_config(layout="wide")
 st.title("⚾ MLB 赛事数据查询系统")
 
