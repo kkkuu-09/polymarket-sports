@@ -10,7 +10,7 @@ st.cache_resource.clear()
 
 # ========== 数据库配置 ==========
 DB_CONFIG = {
-    "host": "localhost",
+    "host": "125.227.80.149",  # 你的公网IP
     "user": "root",
     "password": "123456",
     "database": "mlb",
